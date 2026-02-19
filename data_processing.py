@@ -1,9 +1,11 @@
 import pandas as pd
 
 def process_data(data_frame):
-    data_frame = data_frame.drop(columns=['age'])
-    filtered_data = data_frame[data_frame['age'] > 30]
-    return filtered_data
+    # Filter the data first while the 'age' column still exists
+    filtered_data = data_frame[data_frame['age'] > 30].copy()
+    # Drop the 'age' column after filtering is complete
+    processed_data = filtered_data.drop(columns=['age'])
+    return processed_data
 
 data = {'name': ['Alice', 'Bob', 'Charlie', 'David'],
         'age': [25, 32, 28, 45],
