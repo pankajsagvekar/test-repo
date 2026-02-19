@@ -1,0 +1,18 @@
+{
+  "repository_url": "https://github.com/pankajsagvekar/test-repo",
+  "team_name": "OMEGAY",
+  "leader_name": "RIFT",
+  "branch_name": "OMEGAY_RIFT_AI_Fix",
+  "total_failures": 1,
+  "total_fixes": 0,
+  "iterations_used": 2,
+  "commit_count": 0,
+  "final_status": "FAILED",
+  "total_time_seconds": 21.74,
+  "score_calculation": {
+    "base_score": 100,
+    "speed_bonus": 10,
+    "efficiency_penalty": 0,
+    "final_score": 110
+  }
+}
