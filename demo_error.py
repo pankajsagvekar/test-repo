@@ -1,8 +1,8 @@
 def remove_even_numbers(numbers):
-    for number in numbers:
-        if number % 2 == 0:
-            numbers.remove(number)
-    return numbers
+    # Use a list comprehension to create a new list containing only odd numbers.
+    # Modifying a list while iterating over it (as in the original code)
+    # causes the iterator to skip elements.
+    return [number for number in numbers if number % 2 != 0]
 
 my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 result = remove_even_numbers(my_list)
