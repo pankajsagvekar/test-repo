@@ -1,8 +1,8 @@
 import pandas as pd
 
 def process_data(data_frame):
-    data_frame = data_frame.drop(columns=['age'])
-    filtered_data = data_frame[data_frame['age'] > 30]
+    # Filter the data based on 'age' before dropping the column to avoid a KeyError
+    filtered_data = data_frame[data_frame['age'] > 30].drop(columns=['age'])
     return filtered_data
 
 data = {'name': ['Alice', 'Bob', 'Charlie', 'David'],
